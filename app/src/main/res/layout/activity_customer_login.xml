@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_customer_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerLoginActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_customer_login_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/tv_customer_login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/enter_your_mobile_number"
+        android:textAlignment="viewStart"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
+        app:layout_constraintStart_toStartOf="@id/til_customer_login_cellphone_label"
+        app:layout_constraintTop_toBottomOf="@id/fab_customer_login_back" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_customer_login_cellphone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/cellphone"
+        app:endIconDrawable="@drawable/ic_call"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_customer_login_title"
+        app:prefixText="+55">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_customer_login_cellphone_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxWidth="488dp"
+            android:maxLength="11"
+            android:minWidth="360dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login_option_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/proceed"
+        app:layout_constraintEnd_toEndOf="@id/til_customer_login_cellphone_label"
+        app:layout_constraintStart_toStartOf="@id/til_customer_login_cellphone_label"
+        app:layout_constraintTop_toBottomOf="@id/til_customer_login_cellphone_label" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

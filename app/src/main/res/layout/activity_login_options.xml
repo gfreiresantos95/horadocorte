@@ -46,10 +46,12 @@
 
     <LinearLayout
         android:id="@+id/ll_login_options_container"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_rounded_background"
         android:gravity="center"
+        android:maxWidth="768dp"
+        android:minWidth="512dp"
         android:orientation="vertical"
         android:paddingTop="32dp"
         android:paddingBottom="64dp"

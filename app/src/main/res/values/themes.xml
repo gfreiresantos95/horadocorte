@@ -1,10 +1,14 @@
 <resources>
 
     <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
-        <item name="android:windowBackground">@color/grey_900</item>
+        <item name="android:windowBackground">@color/black_80</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="materialButtonOutlinedStyle">@style/Custom_Outlined_Button_Style</item>
         <item name="materialButtonStyle">@style/Custom_Button_Style</item>
+        <item name="android:statusBarColor">@color/black_80</item>
+        <item name="floatingActionButtonStyle">@style/Custom_FAB_Style</item>
+
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout</item>
     </style>
 
     <style name="Custom_Outlined_Button_Style" parent="Widget.Material3.Button.OutlinedButton">
@@ -18,9 +22,15 @@
     <style name="Custom_Button_Style" parent="Widget.Material3.Button">
         <item name="android:minWidth">256dp</item>
         <item name="android:maxWidth">320dp</item>
-        <item name="android:textColor">@color/grey_900</item>
+        <item name="android:textColor">@color/black_80</item>
         <item name="backgroundTint">@color/yellow_500</item>
         <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>
+    </style>
+
+    <style name="Custom_FAB_Style" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButton</item>
+        <item name="backgroundTint">@color/black_60</item>
+        <item name="tint">@android:color/white</item>
     </style>
 
     <style name="ThemeOverlay.App.Button.TextButton" parent="ThemeOverlay.Material3.Button.TextButton">
@@ -28,6 +38,26 @@
     </style>
 
     <style name="ThemeOverlay.App.Button" parent="ThemeOverlay.Material3.Button">
-        <item name="colorOnContainer">@android:color/white</item>
+        <item name="colorOnContainer">@android:color/black</item>
+    </style>
+
+    <style name="ThemeOverlay.App.FloatingActionButton" parent="">
+        <item name="colorOnContainer">@android:color/black</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextInputLayout</item>
+        <item name="android:textColorHint">@color/grey_500</item>
+        <item name="boxStrokeColor">@drawable/custom_textfield_stroke_color</item>
+        <item name="endIconTint">@color/grey_500</item>
+        <item name="cursorColor">@color/grey_500</item>
+        <item name="prefixTextColor">@color/grey_500</item>
+        <item name="hintTextColor">@color/grey_500</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextInputLayout" parent="">
+        <item name="colorOnSurface">@android:color/white</item>
+        <item name="colorError">@color/red_500</item>
+        <item name="editTextStyle">@style/Widget.Material3.TextInputEditText.OutlinedBox</item>
     </style>
 </resources>

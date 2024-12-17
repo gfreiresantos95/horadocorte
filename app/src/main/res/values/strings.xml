@@ -4,4 +4,7 @@
     <string name="enter_as">Entrar como:</string>
     <string name="customer">Cliente</string>
     <string name="professional">Profissional</string>
+    <string name="enter_your_mobile_number">Digite o número do seu celular</string>
+    <string name="cellphone">Celular</string>
+    <string name="proceed">Continuar</string>
 </resources>
