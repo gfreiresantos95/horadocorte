@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">horadocorte</string>
+    <string name="app_name">Hora do Corte</string>
+    <string name="app_slogan">Simplifique sua rotina, agende seu corte.</string>
+    <string name="enter_as">Entrar como:</string>
+    <string name="customer">Cliente</string>
+    <string name="professional">Profissional</string>
 </resources>

@@ -1,9 +1,33 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Horadocorte" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+
+    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@color/grey_900</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="materialButtonOutlinedStyle">@style/Custom_Outlined_Button_Style</item>
+        <item name="materialButtonStyle">@style/Custom_Button_Style</item>
     </style>
 
-    <style name="Theme.Horadocorte" parent="Base.Theme.Horadocorte" />
+    <style name="Custom_Outlined_Button_Style" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minWidth">256dp</item>
+        <item name="android:maxWidth">320dp</item>
+        <item name="android:textColor">@color/yellow_500</item>
+        <item name="strokeColor">@color/yellow_500</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.TextButton</item>
+    </style>
+
+    <style name="Custom_Button_Style" parent="Widget.Material3.Button">
+        <item name="android:minWidth">256dp</item>
+        <item name="android:maxWidth">320dp</item>
+        <item name="android:textColor">@color/grey_900</item>
+        <item name="backgroundTint">@color/yellow_500</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Button.TextButton" parent="ThemeOverlay.Material3.Button.TextButton">
+        <item name="colorOnContainer">@android:color/black</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Button" parent="ThemeOverlay.Material3.Button">
+        <item name="colorOnContainer">@android:color/white</item>
+    </style>
 </resources>
